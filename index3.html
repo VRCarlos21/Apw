@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PWA de Viajes</title>
+</head>
+<body>
+  <header>
+    <h1>Conoce el lugar que vas a visitar</h1>
+    <input type="text" id="search-input" placeholder="Buscar país..." oninput="filterCountries()" />
+  </header>
+
+  <main class="container">
+    <!-- Lista de países -->
+    <section id="countries-list" class="countries-list"></section>
+
+    <!-- Detalles del país seleccionado -->
+    <section id="country-details" class="country-details"></section>
+
+    
+    <!-- Clima y Atracciones del país seleccionado -->
+    <section id="weather-details" class="weather-details"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
